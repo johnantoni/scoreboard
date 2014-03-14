@@ -1,12 +1,10 @@
 Router.configure
-  layout: 'layout'
-  notFoundTemplate: '404'
-  renderTemplates:
+  layoutTemplate: 'layout'
+  loadingTemplate: 'loading'
+  yieldTemplates:
     header:
       to: 'header'
     footer:
       to: 'footer'
-
-Router.map ->
-  @route 'home',
-    path: '/'
+  before: ->
+    $('meta[name^="description"]').remove()

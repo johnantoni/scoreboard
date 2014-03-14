@@ -10,3 +10,12 @@ preserve-inputs
 iron-router
 coffeescript
 less
+minimongoid
+accounts-entry
+http
+accounts-password
+profile
+crypto-base64
+crypto-base
+email
+accounts-ui
